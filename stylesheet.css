@@ -2,10 +2,60 @@
     margin-top: 5%;
 }
 
-.bg {
-    display: block;
+#container {
+    position: relative;
+    text-align: center;
+}
+
+.hobbyNav {
+    color: black;
+}
+
+#image {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 50%;
+}
+
+.profileImageRound {
+    border-radius: 50%;
+    position: absolute;
+    width: 20%;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#introText1 {
+    position: absolute;
+    color: white;
+    font-size: 250%;
+    font-weight: bold;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#introText2 {
+    position: absolute;
+    color: white;
+    font-size: 250%;
+    font-weight: bold;
+    top: 75%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#introText3 {
+    position: absolute;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    top: 85%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
