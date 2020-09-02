@@ -2,12 +2,49 @@
     margin-top: 5%;
 }
 
+.profileImg {
+    border-radius: 10%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+}
+
+.cardBgColor {
+    background-color: #F7F7F7;
+}
+
+#checkList {
+    width: 100%;
+}
+
+#hzLogo {
+    width: 75%;
+}
+
 #container {
     position: relative;
     text-align: center;
 }
 
-.hobbyNav {
+.profileNavColor {
+    color: black !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #343A40 !important;
+}
+
+#v-pills-tab {
     color: black;
 }
 
@@ -19,9 +56,9 @@
 }
 
 .profileImageRound {
-    border-radius: 50%;
+    border-radius: 10%;
     position: absolute;
-    width: 20%;
+    width: 15%;
     top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
