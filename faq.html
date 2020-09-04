@@ -10,27 +10,64 @@
 </header>
 
 <head>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="profile.html">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="personalDash.html">Personal Dashboard</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="faq.html">FAQ</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item  ">
+                        <div class="btn-group">
+                            <a class="nav-link" href="index.html">Home</a>
+                            <a type="button" class="btn btn-dark dropdown-toggle navDropdown dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('index.html','HBO')">HBO</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('index.html','StudyProgram')">Study Program</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" style="color: white !important;" href="index.html">|</a>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="btn-group">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                            <a type="button" class="btn btn-dark dropdown-toggle navDropdown dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Hobbys')">Hobby's</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','ProffSkills')">Professional Skills</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','WerkErvaring')">Werk Ervaring</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Stages')">Stages</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Projecten')">Projecten</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Scholing')">Scholing</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link disabled" style="color: white !important;" href="index.html">|</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <div class="btn-group">
+                            <a class="nav-link" href="personalDash.html">Personal Dashboard</a>
+                            <a type="button" class="btn btn-dark dropdown-toggle navDropdown dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('personalDash.html','StudyMonitor')">Study Monitor</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('personalDash.html','StudyGuide')">Study Guide</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link disabled" style="color: white !important;" href="index.html">|</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link active" href="faq.html">FAQ<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </head>
 
 <body>
@@ -86,7 +123,7 @@
                         <h5><b>Hoe kan je projectruimtes en extra materiaal reseveren?</b></h5>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Ga narr jouw HZ portal, vanuit daar ga je naar het selfservice portal.<br>In het selfservice portal kun je kiezen tussen nieuwe resevering en mijn reseveringen.</p>
+                        <p class="card-text">Ga naar jouw HZ portal, vanuit daar ga je naar het selfservice portal.<br>In het selfservice portal kun je kiezen tussen nieuwe resevering en mijn reseveringen.</p>
                         <a href="#" class="btn btn-dark">Go somewhere</a>
                     </div>
                 </div>
