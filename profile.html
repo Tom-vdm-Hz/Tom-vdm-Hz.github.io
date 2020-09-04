@@ -10,27 +10,64 @@
 </header>
 
 <head>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="profile.html">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="personalDash.html">Personal Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQ</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item  ">
+                        <div class="btn-group">
+                            <a class="nav-link " href="index.html">Home</a>
+                            <a type="button" class="btn btn-dark dropdown-toggle navDropdown dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('index.html','HBO')">HBO</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('index.html','StudyProgram')">Study Program</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" style="color: white !important;" href="index.html">|</a>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="btn-group">
+                            <a class="nav-link active" href="profile.html">Profile<span class="sr-only">(current)</span></a>
+                            <a type="button" class="btn btn-dark dropdown-toggle navDropdown dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Hobbys')">Hobby's</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','ProffSkills')">Professional Skills</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','WerkErvaring')">Werk Ervaring</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Stages')">Stages</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Projecten')">Projecten</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Scholing')">Scholing</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link disabled" style="color: white !important;" href="index.html">|</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <div class="btn-group">
+                            <a class="nav-link" href="personalDash.html">Personal Dashboard</a>
+                            <a type="button" class="btn btn-dark dropdown-toggle navDropdown dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('personalDash.html','StudyMonitor')">Study Monitor</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('personalDash.html','StudyGuide')">Study Guide</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link disabled" style="color: white !important;" href="index.html">|</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </head>
 
 <body>
@@ -45,22 +82,23 @@
                 </div>
                 <div class="row">
                     <p>Mijn naam is Tom van den Muijsenberg, ik ben een 19 jarige student uit Middelburg.<br> Voordat Ik ben begonnen aan HBO-ICT bij HZ heb ik de opleiding Sofware Developer bij Scalda gedaan en hiervoor heb ik in 2020 mijn diploma daarvoor
-                        gehaald.
+                        gehaald. Tijdens mijn tijd op het MBO heb ik veel skills opgedaan, niet alleen op school maar ook tijdens stages.
                     </p>
-                    <br>
-                    <p>Mijn naam is Tom van den Muijsenberg, ik ben een 19 jarige student uit Middelburg.<br> Voordat Ik ben begonnen aan HBO-ICT bij HZ heb ik de opleiding Sofware Developer bij Scalda gedaan en hiervoor heb ik in 2020 mijn diploma daarvoor
-                        gehaald.
+                    <p>Mijn Hobbys zijn Gamen, Virtual Reality Gamen, mountainbiken en alles te maken met auto's. Momenteel werk ik bij 't Waepen van Veere en ben ook van plan hier tijdens mij HBO studie de komende 4 jaar te blijven werken als bijbaan.
                     </p>
-                    <br>
-                    <p>Mijn naam is Tom van den Muijsenberg, ik ben een 19 jarige student uit Middelburg.<br> Voordat Ik ben begonnen aan HBO-ICT bij HZ heb ik de opleiding Sofware Developer bij Scalda gedaan en hiervoor heb ik in 2020 mijn diploma daarvoor
-                        gehaald.
-                    </p>
+                    <a onclick="scrollToId('Hobbys')" class="btn btn-dark m-2" target="_blank">Hobby's</a>
+                    <a onclick="scrollToId('ProffSkills')" class="btn btn-dark m-2" target="_blank">Professional Skills</a>
+                    <a onclick="scrollToId('WerkErvaring')" class="btn btn-dark m-2" target="_blank">Werk Ervaring</a>
+                    <a onclick="scrollToId('Stages')" class="btn btn-dark m-2" target="_blank">Stages</a>
+                    <a onclick="scrollToId('Projecten')" class="btn btn-dark m-2" target="_blank">Projecten</a>
+                    <a onclick="scrollToId('Scholing')" class="btn btn-dark m-2" target="_blank">Scholing</a>
                 </div>
             </div>
         </div>
         <!-- Hobby's -->
         <div class="card mt-5">
             <div class="card-header">
+                <a class="anchor" id="Hobbys"></a>
                 <div class="row">
                     <hr>
                     <h2>Hobby's</h2>
@@ -80,24 +118,25 @@
                     <div class="col-9">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-Gaming" role="tabpanel" aria-labelledby="v-pills-Gaming-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>Het grootste deel van mijn vrije tijd besteed ik aan gamen, mijn favorite games zijn "Escape From Tarkov", "Rainbow six: siege" en "Forza". Naast deze speel ik ook nog andere games maar ik ga steeds terug naar deze 3. Ook
+                                    doe ik veel contacten eraan op die ik anders nooit tegen zou zijn gekomen. Natuurlijk vind ik het wel belangrijk om fit te blijven en hier helpen mijn andere hobby's veel bij.</p>
+                                <a href="https://www.escapefromtarkov.com/" class="btn btn-dark" target="_blank">Escape From Tarkov</a>
+                                <a href="https://www.ubisoft.com/nl-nl/game/rainbow-six/siege" class="btn btn-dark" target="_blank">Rainbow six: siege</a>
+                                <a href="https://forzamotorsport.net/en-us/" class="btn btn-dark" target="_blank">Forza</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-vr" role="tabpanel" aria-labelledby="v-pills-vr-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>Een Vr bril is een van mijn beste ankopen, als je het voor de eerste keer doet gaat er echt een wereld voor je open. Voornamenlijk speel ik "Beat Saber" en "Hot Dogs, Horseshoes and Hand Grenades", ook is het perfect om
+                                    fit te blijven. 30 min Beat Saber en je bent volop aan het zweten.</p>
+                                <a href="https://store.steampowered.com/app/450540/Hot_Dogs_Horseshoes__Hand_Grenades/" class="btn btn-dark" target="_blank">Hot Dogs, Horseshoes and Hand Grenades</a>
+                                <a href="https://beatsaber.com/" class="btn btn-dark" target="_blank">Beat Saber</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-Mtb" role="tabpanel" aria-labelledby="v-pills-Mtb-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>Als ik gamen of Vr even zat ben ga ik vaak mountainbiken. Wat ik er leuk aan vind is dat je adrenaline er lakker van gaat lopen, ook hoef ik niet ver te rijzen want bij mij achter is een klein mtb park en iest verder is
+                                    een grooter mtb park op een oude vuilnisbelt. Ook als we op vakantie gaan naar bergen dan neem ik mijn mtb mee omdat het altijd leukker is met bergen.</p>
                             </div>
                             <div class="tab-pane fade" id="v-pills-Cars" role="tabpanel" aria-labelledby="v-pills-Cars-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>Ik denk dat mijn passie voor auto's voornamelijk komt van gamen omdat ik nog geen rijbewijs heb, ik ben wel van plan om hem in 2020 fo 2021 te halen. Verder weet ik ook wel veel vanaf en ben ik ook van plan om zelf te gaan
+                                    sleutelen aan mijn toekomstige auto.</p>
                             </div>
                         </div>
                     </div>
@@ -108,15 +147,16 @@
         <!-- Skills -->
         <div class="card mt-5">
             <div class="card-header">
+                <a class="anchor" id="ProffSkills"></a>
                 <div class="row">
                     <hr>
-                    <h2>Skills</h2>
+                    <h2>Professional Skills</h2>
                     <hr>
                 </div>
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-3 overflow-auto" style="height: 200px;">
+                    <div class="col-3 overflow-auto" id="proffSkill">
                         <div class="nav flex-column nav-pills scroll overflow-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <a class="profileNavColor nav-link active" id="v-pills-Java-tab" data-toggle="pill" href="#v-pills-Java" role="tab" aria-controls="v-pills-Java" aria-selected="true">Java</a>
                             <a class="profileNavColor nav-link" id="v-pills-JavaScript-tab" data-toggle="pill" href="#v-pills-JavaScript" role="tab" aria-controls="v-pills-JavaScript" aria-selected="false">JavaScript</a>
@@ -130,70 +170,81 @@
                             <a class="profileNavColor nav-link" id="v-pills-HTML-tab" data-toggle="pill" href="#v-pills-HTML" role="tab" aria-controls="v-pills-HTML" aria-selected="false">HTML</a>
                             <a class="profileNavColor nav-link" id="v-pills-CSS-tab" data-toggle="pill" href="#v-pills-CSS" role="tab" aria-controls="v-pills-CSS" aria-selected="false">CSS</a>
                             <a class="profileNavColor nav-link" id="v-pills-More-tab" data-toggle="pill" href="#v-pills-More" role="tab" aria-controls="v-pills-More" aria-selected="false">More</a>
-                            <!-- nodeJs, react en adnere nog toevoegen. -->
                         </div>
                     </div>
                     <div class="col-9">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-Java" role="tabpanel" aria-labelledby="v-pills-Java-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>Java is de eerste programeertaal die ik leerde, met deze taal heb ik 3 jaar gewerkt op het MBO.<br> Toen ik met Java begon snapte ik er niks van maar nu snap ik het en ben ik blij dat ze mij op het MBO deze taal hebben
+                                    geleerd want ik vind het basis taal omdat veel talen er wel iets weg van hebben. </p>
+                                <a href="https://nl.wikipedia.org/wiki/Java_(programmeertaal)" class="btn btn-dark" target="_blank">Java</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-JavaScript" role="tabpanel" aria-labelledby="v-pills-JavaScript-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>JavaScript heb ik ook veel gebruikt op het MBO om bepaalde dingen in de view goed te krijgen, ook heb ik meerde projecten gedaan met javascript omdat je er redenlijk makkenlijk mee kan beginnen. </p>
+                                <a href="https://nl.wikipedia.org/wiki/JavaScript" class="btn btn-dark" target="_blank">JavaScript</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-TypeScript" role="tabpanel" aria-labelledby="v-pills-TypeScript-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>TypeScript heb ik gebruikt tijdens mijn stage bij Yisual en ik vind het fijner om er mee te werken dan Javascript omdat er meer structuur in zit, ik denk dat dit komt doorat ik op het MBO veel met Java en object oiriented
+                                    programming heb gewerkt.</p>
+                                <a href="https://www.typescriptlang.org/" class="btn btn-dark" target="_blank">TypeScript</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-Struts2" role="tabpanel" aria-labelledby="v-pills-Struts2-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>Struts2 is het Java framework dat mij op het MBO is aangeleerd omdat de project dit framework gebruiken. Het is niet mijn favoriete framework maar ik kan er goed mee overweg.</p>
+                                <a href="https://struts.apache.org/" class="btn btn-dark" target="_blank">Struts2</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-SpringBoot" role="tabpanel" aria-labelledby="v-pills-SpringBoot-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>Spring Boot heb ik gebruikt tijdens mijn eerste project op het MBO(VOS). Ik heb er maar een half jaar mee gewerkt aar ik weet wel in grote lijnen hoe het werkt. </p>
+                                <a href="https://spring.io/projects/spring-boot" class="btn btn-dark" target="_blank">Spring Boot</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-PHP" role="tabpanel" aria-labelledby="v-pills-PHP-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>PHP heb ik als eerst gebruikt tijdens het maken van de helideck calculator, in totaal heb ik er maar 10 weken ervaring mee maar dat was voor mij genoeg om de basics te kunnen leren. Als ik nu nog een project met PHP zou
+                                    doen denk ik dat ik het sneller zal begrijpen.</p>
+                                <a href="https://www.php.net/" class="btn btn-dark" target="_blank">PHP</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-MySQL" role="tabpanel" aria-labelledby="v-pills-MySQL-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>MySQL is de taal die ik op het MBO heb geleerd om te kunnen werken met de databases die ze op de opleiding gebruiken. Ik weet nog wel hoe het werkt maar het is een beetje weggevallen door gebruik van hibernate in de MBO
+                                    projecten wat je databases voor je bijhoudt.</p>
+                                <a href="https://www.mysql.com/" class="btn btn-dark" target="_blank">MySQL</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-MongoDB" role="tabpanel" aria-labelledby="v-pills-MongoDB-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>MongoDB heb ik veel gebruikt bij eigen projecten omdat ik het makkenlijk vind werken ne het werkt goed met JavaScript, Ik heb het voornamenlijk gebruikt voor mijn PizzaClicker.</p>
+                                <a href="https://www.mongodb.com/" class="btn btn-dark" target="_blank">MongoDB</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-SCRUM" role="tabpanel" aria-labelledby="v-pills-SCRUM-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>Scrum is een software ontwikkelings methode die mij is geleerd op het MBO en hier heb ik er ook mijn certificaat voor gehaald. Verder gebuikt ieder project het op het MBO met alle meetings dus heb ik er veel ervaring mee.</p>
+                                <a href="https://agilescrumgroup.nl/wat-is-scrum-werken/" class="btn btn-dark" target="_blank">Scrum</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-HTML" role="tabpanel" aria-labelledby="v-pills-HTML-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>Met HTML heb ik voor het eerst kennis gemaakt op de MAVO door middel van een simpele website te maken. Ondertussen heb ik het in ieder project gebruikt met een view en weet ik goed hoe het werkt.</p>
+                                <a href="https://nl.wikipedia.org/wiki/HyperText_Markup_Language" class="btn btn-dark" target="_blank">HTML</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-CSS" role="tabpanel" aria-labelledby="v-pills-CSS-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <p>CSS heb ik ook voor het eerst gebruikt op de MAVO en tegenwoordig kan ik er goed mee overweg omdat het in bijna elk project wel gebruikt wordt.</p>
+                                <a href="https://nl.wikipedia.org/wiki/Cascading_Style_Sheets" class="btn btn-dark" target="_blank">CSS</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-More" role="tabpanel" aria-labelledby="v-pills-More-tab">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
-                                    carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                <div class="row text-center mb-3">
+                                    <div class="col-3">
+                                        <a href="https://hibernate.org/" class="btn btn-dark btn-block" target="_blank">Hibernate</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="https://angular.io/" class="btn btn-dark btn-block" target="_blank">Angular</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="https://nodejs.org/en/" class="btn btn-dark btn-block" target="_blank">NodeJs</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="https://reactjs.org/" class="btn btn-dark btn-block" target="_blank">React</a>
+                                    </div>
+                                </div>
+                                <div class="row text-center mb-3">
+                                    <div class="col-3">
+                                        <a href="https://getbootstrap.com/" class="btn btn-dark btn-block" target="_blank">Bootstrap</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="https://swagger.io/" class="btn btn-dark btn-block" target="_blank">Swagger</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -204,9 +255,10 @@
         <!-- Werk -->
         <div class="card mt-5">
             <div class="card-header">
+                <a class="anchor" id="WerkErvaring"></a>
                 <div class="row">
                     <hr>
-                    <h2>Werk</h2>
+                    <h2>Werk Ervaring</h2>
                     <hr>
                 </div>
             </div>
@@ -242,6 +294,7 @@
         <!-- Stages -->
         <div class="card mt-5">
             <div class="card-header">
+                <a class="anchor" id="Stages"></a>
                 <div class="row">
                     <hr>
                     <h2>Stages</h2>
@@ -280,6 +333,7 @@
         <!-- Projecten -->
         <div class="card mt-5">
             <div class="card-header">
+                <a class="anchor" id="Projecten"></a>
                 <div class="row">
                     <hr>
                     <h2>Projecten</h2>
@@ -331,6 +385,7 @@
         <!-- Scholing -->
         <div class="card mt-5">
             <div class="card-header">
+                <a class="anchor" id="Scholing"></a>
                 <div class="row">
                     <hr>
                     <h2>Scholing</h2>
@@ -349,7 +404,9 @@
                     <div class="col-9">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-HBO" role="tabpanel" aria-labelledby="v-pills-HBO-tab">
-                                <p>"HBO-ICT" bij de HZ is mijn huidige opleiding en ik ben er in 2020 begonnen, ik zit nu in mijn eerste jaar en deze website is mijn eerste project.</p>
+                                <p>"HBO-ICT" bij de HZ is mijn huidige opleiding en ik ben er in 2020 begonnen, ik zit nu in mijn eerste jaar en deze website is mijn eerste project. In Totaal duurt de opleiding 4 jaar waarvan je de eerste 2 jaar op school
+                                    zit.
+                                    <br> Het derde jaar begin je met een stage en daarna doe je een minor over een zelf gekozen onderwerp. In het vierde jaar doe je weer een stage en studeer je af.</p>
                                 <a href="https://hz.nl/" class="btn btn-dark" target="_blank">HZ</a>
                                 <a href="https://hz.nl/opleidingen/hbo-ict" class="btn btn-dark" target="_blank">Mijn opleiding</a>
                             </div>

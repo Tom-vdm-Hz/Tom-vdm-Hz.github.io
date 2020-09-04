@@ -10,27 +10,64 @@
 </header>
 
 <head>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="profile.html">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="personalDash.html">Personal Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQ</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item  ">
+                        <div class="btn-group">
+                            <a class="nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            <a type="button" class="btn btn-dark dropdown-toggle navDropdown dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('index.html','HBO')">HBO</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('index.html','StudyProgram')">Study Program</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" style="color: white !important;" href="index.html">|</a>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="btn-group">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                            <a type="button" class="btn btn-dark dropdown-toggle navDropdown dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Hobbys')">Hobby's</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','ProffSkills')">Professional Skills</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','WerkErvaring')">Werk Ervaring</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Stages')">Stages</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Projecten')">Projecten</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('profile.html','Scholing')">Scholing</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link disabled" style="color: white !important;" href="index.html">|</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <div class="btn-group">
+                            <a class="nav-link" href="personalDash.html">Personal Dashboard</a>
+                            <a type="button" class="btn btn-dark dropdown-toggle navDropdown dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('personalDash.html','StudyMonitor')">Study Monitor</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('personalDash.html','StudyGuide')">Study Guide</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link disabled" style="color: white !important;" href="index.html">|</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </head>
 
 <body>
@@ -47,14 +84,12 @@
                 <span id="introText2"><b>HBO-ICT</b></span>
             </div>
             <div class="row">
-                <a onclick="scrollToId('intro')" id="introText3" type="button" class="badge badge-lg badge-dark">Continue</a>
+                <a onclick="scrollToId('HBO')" id="introText3" type="button" class="badge badge-lg badge-dark">Continue</a>
             </div>
         </div>
-
     </div>
-
     <div class="container">
-        <a class="anchor" id="intro"></a>
+        <a class="anchor" id="HBO"></a>
         <div class="row mt-3">
             <div class="col-12 text-center">
                 <div class="card">
@@ -66,19 +101,17 @@
         </div>
         <div class="row mt-3">
             <div class="col-8">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-                    Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-                    Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
-                    sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam
-                    quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                <p>Er zit een heel verhaal achter reden waarom ik heb gekozen om HBO.<br>Tijdens mijn examenstage van 20 weken op het MBO die ik bij Yisual heb gedaan was mijn plan om na het MBO bij Yisual te gaan werk omdat ik daar een baan aangeboden ben
+                    gekregen.
+                    <br>Alleen toen ik met een van de salesman aan het praten was tijdens de pauze begon hij over de voordelen van het HBO zoals betere banen dan het MBO die ook beter betalen en als ik HBO zou gaan doen dan zou ik toch nog maar 22 zou
+                    zijn als ik er mee klaar ben wat nog steeds jong is om te gaan werken. Toen ik ging nadenken over wat hij zij kwam ik er al wel snel achter dat het klopt.<br> Nog snel naar een paar open dagen gegaan en toen ingeschreven bij HBO-ICT
+                    op de HZ.<br> Nu ik het terug lees is het verhaal toch niet zo lang, kort samengevat: een salesman van het bedrijf waar ik een baan ben aangeboden heeft mij overgehaald om een HBO opleiding te gaan doen.</p>
             </div>
             <div class="col-4">
                 <img id="hzLogo" src="./hz-logo.jpg" alt="">
             </div>
         </div>
-
-
+        <a class="anchor" id="StudyProgram"></a>
         <div class="row mt-3">
             <div class="col-12 text-center">
                 <div class="card">
@@ -93,12 +126,49 @@
                 <img id="checkList" src="./checklist.jpg" alt="">
             </div>
             <div class="col-8">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-                    Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-                    Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
-                    sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam
-                    quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                <p>Het studie programma van HBO-ICT bestaat uit 4 jaren. Wat er je in elk jaar doet staat hieronder in de dropdowns</p>
+                <div class="row">
+                    <div class="dropdown m-2">
+                        <button class="btn btn-dark dropdown-toggle" onmouseover="this.click()" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Year 1
+                    </button>
+                        <div class="dropdown-menu studyProgramDropdown" aria-labelledby="dropdownMenuButton">
+                            <a style="color: black !important;" class="dropdown-item disabled">Q1. Computer science</a>
+                            <a style="color: black !important;" class="dropdown-item disabled">Q2. Game development</a>
+                            <a style="color: black !important;" class="dropdown-item disabled">Q3. Framework development</a>
+                            <a style="color: black !important;" class="dropdown-item disabled">Q4. Framework development</a>
+                        </div>
+                    </div>
+                    <div class="dropdown m-2">
+                        <button class="btn btn-dark dropdown-toggle" onmouseover="this.click()" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Year 2
+                    </button>
+                        <div class="dropdown-menu studyProgramDropdown" aria-labelledby="dropdownMenuButton">
+                            <a style="color: black !important;" class="dropdown-item disabled">S1. Business value creation</a>
+                            <a style="color: black !important;" class="dropdown-item disabled">S2. Data science</a>
+                        </div>
+                    </div>
+                    <div class="dropdown m-2">
+                        <button class="btn btn-dark dropdown-toggle" onmouseover="this.click()" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Year 3
+                    </button>
+                        <div class="dropdown-menu studyProgramDropdown" aria-labelledby="dropdownMenuButton">
+                            <a style="color: black !important;" class="dropdown-item disabled">S1. Internship</a>
+                            <a style="color: black !important;" class="dropdown-item disabled">S2. Minor</a>
+                        </div>
+                    </div>
+                    <div class="dropdown m-2">
+                        <button class="btn btn-dark dropdown-toggle" onmouseover="this.click()" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Year 4
+                    </button>
+                        <div class="dropdown-menu studyProgramDropdown" aria-labelledby="dropdownMenuButton">
+                            <a style="color: black !important;" class="dropdown-item disabled">S1. Specialisation</a>
+                            <a style="color: black !important;" class="dropdown-item disabled">S2. Graduation</a>
+                        </div>
+                    </div>
+                    <p>Q = quartile<br> S = semester
+                    </p>
+                </div>
             </div>
         </div>
     </div>

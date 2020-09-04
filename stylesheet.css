@@ -10,6 +10,24 @@
     width: 100%;
 }
 
+#proffSkill {
+    max-height: 200px;
+}
+
+.studyProgramDropdown {
+    color: black !important;
+}
+
+.navDropdown {
+    background-color: #343A40 !important;
+    border-color: #343A40 !important;
+    color: #95989B !important;
+}
+
+.navDropdown:hover {
+    color: white !important;
+}
+
 .footerIcons {
     color: white;
 }
@@ -21,7 +39,7 @@
 a.anchor {
     display: block;
     position: relative;
-    top: -70px;
+    top: -80px;
     visibility: hidden;
 }
 
