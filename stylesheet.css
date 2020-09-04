@@ -10,6 +10,10 @@
     width: 100%;
 }
 
+#proffSkill {
+    max-height: 200px;
+}
+
 .studyProgramDropdown {
     color: black !important;
 }
