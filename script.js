@@ -3,9 +3,6 @@ $(function() {
 })
 
 function scrollToId(toFindElId) {
-    // var msg = new SpeechSynthesisUtterance();
-    // msg.text = "'t Waepen van Veere is een hotel/restaurant in Veere en is momenteel mijn huidige werk, ik begon hier in 2017 als afwasser en doe tegenwoordig kun je mij ook vinden achter de bar.";
-    // window.speechSynthesis.speak(msg);
     document.getElementById(toFindElId).scrollIntoView({ behavior: "smooth" });
 }
 
@@ -70,8 +67,17 @@ function calculateMyEc() {
 function canGoToNextYear() {
     if (parseFloat(document.getElementById('myEc').innerText) >= parseFloat(document.getElementById('NBSA').innerText)) {
         document.getElementById('continueStudy').innerText = 'Yes'
+        document.getElementById('continueStudy').style.backgroundColor = 'green'
     } else {
         document.getElementById('continueStudy').innerText = 'No'
+        document.getElementById('continueStudy').style.backgroundColor = 'red'
+    }
+    if (parseFloat(document.getElementById('myEc').innerText) == parseFloat(document.getElementById('maxEc').innerText)) {
+        document.getElementById('propedeuse').innerText = 'Yes'
+        document.getElementById('propedeuse').style.backgroundColor = 'green'
+    } else {
+        document.getElementById('propedeuse').innerText = 'No'
+        document.getElementById('propedeuse').style.backgroundColor = 'red'
     }
 }
 
