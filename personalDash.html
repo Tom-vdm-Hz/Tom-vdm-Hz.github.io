@@ -70,65 +70,256 @@
     </div>
 </head>
 
-<body>
+<body onload="calculateTotalEc(),calculateMyEc(), canGoToNextYear()">
     <div class="container nav-margin-fix">
-        <table class="table table-striped">
+        <a class="anchor" id="StudyMonitor"></a>
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <div class="card">
+                    <div class="cardBgColor card-body">
+                        <h2 class="text-xs-center">- Study Monitor -</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 ">
+                <p>In de onderstaande tabel wordt berekend of ik door mag naar het volgende jaar aan de hand van de cijfers die ik haal in de andere tabel. Als mijn EC(European Credits) 45 of hoger is dan mag ik door naar het volgende jaar, maar als het
+                    60 is dan heb ik ook mijn propedeuse gehaald. Als mijn EC lager dan 45 is dan heb ik een NBSA(Negatief Bindend Studie Advies) en mag ik niet meer verder met de opleiding.</p>
+            </div>
+        </div>
+        <table class="table mt-3 text-center">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">Toets</th>
-                    <th scope="col">Cijfer</th>
-                    <th scope="col">Kwartaal</th>
-                    <th scope="col">Studiepunten</th>
-                    <th scope="col">NBSA</th>
+                    <th scope="col">My EC</th>
+                    <th scope="col">Max EC</th>
+                    <th scope="col">NBSA EC</th>
+                    <th scope="col">Volgend jaar</th>
+                    <th scope="col">Propedeuse</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
+                    <td id="myEc"></td>
+                    <td id="maxEc"></td>
+                    <td id="NBSA">45</td>
+                    <td id="continueStudy"></td>
+                    <td id="propedeuse"></td>
                 </tr>
-                <tr>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                </tr>
-                <tr>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                </tr>
-                <tr>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                </tr>
-                <tr>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                </tr>
-                <tr>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                </tr>
-
             </tbody>
         </table>
-
+        <div class="row mt-3">
+            <div class="col-12 ">
+                <p>In de onderstaande tabel zijn al mijn cijfers te vinden, iedere course heeft een aantal EC(European Credits) wat je er voor kan halen. De meeste courses hebben 1 exam, maar er zijn er ook met meerdere exams. Om een course te halen en de
+                    EC te behalen moet het gemidelde van alle exams van die course hoger zijn dan een 5.5, maar omdat je voor iedere exam een 5.5 of hoger moet halen zal het gemiddelde vaak ook een 5.5 of hoger zijn.</p>
+            </div>
+        </div>
+        <table class="table mt-3 text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Quartile</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">EC</th>
+                    <th scope="col">Exam</th>
+                    <th scope="col">Grade</th>
+                </tr>
+            </thead>
+            <tbody id="results">
+                <tr id="paco">
+                    <td rowspan="3">1</td>
+                    <td>Program and Career Orientation</td>
+                    <td id="ec">2.5</td>
+                    <td>Assessment exam</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="csb">
+                    <td>Computer science basics</td>
+                    <td id="ec">7.5</td>
+                    <td>Written exam</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="pb">
+                    <td>Programming basics</td>
+                    <td id="ec">5</td>
+                    <td>Case study exam</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="oop">
+                    <td rowspan="3">2</td>
+                    <td rowspan="2">Object Oriented Programming</td>
+                    <td rowspan="2" id="ec">10</td>
+                    <td>Case Study</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="oop">
+                    <td>Project</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="ps1">
+                    <td>Proffessional Skills 1</td>
+                    <td id="ec">2.5</td>
+                    <td>Portfolio exam</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="fp1">
+                    <td rowspan="7">3</td>
+                    <td rowspan="2">Framework Project 1</td>
+                    <td rowspan="2" id="ec">5</td>
+                    <td>Portfolio exam 1</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="fp1">
+                    <td>Portfolio exam 2</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="fd1">
+                    <td>Framework Development 1</td>
+                    <td id="ec">5</td>
+                    <td>Case Study</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="pwe">
+                    <td>Proffessional Working Environment</td>
+                    <td id="ec">2.5</td>
+                    <td>Assessment</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="ps2">
+                    <td rowspan="3">Proffessional Skills 2</td>
+                    <td rowspan="3" id="ec">2.5</td>
+                    <td>Portfolio exam</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="ps2">
+                    <td>Written exam 1</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="ps2">
+                    <td>Written exam 2</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="fp2">
+                    <td rowspan="5">4</td>
+                    <td>Framework Project 2</td>
+                    <td id="ec">5</td>
+                    <td>Portfolio exam</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="fd2">
+                    <td>Framework Development 2</td>
+                    <td id="ec">5</td>
+                    <td>Portfolio exam</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="ps3">
+                    <td rowspan="3">Proffessional Skills 3</td>
+                    <td rowspan="3" id="ec">2.5</td>
+                    <td>Portfolio exam</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="ps3">
+                    <td>Written exam 1</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="ps3">
+                    <td>Written exam 2</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="hzp">
+                    <td rowspan="2">Whenever</td>
+                    <td>HZ Personality</td>
+                    <td id="ec">2.5</td>
+                    <td>Portfolio</td>
+                    <td id="grade">0</td>
+                </tr>
+                <tr id="itp">
+                    <td>IT Personality</td>
+                    <td id="ec">2.5</td>
+                    <td>Portfolio</td>
+                    <td id="grade">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="anchor" id="StudyGuide"></a>
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <div class="card">
+                    <div class="cardBgColor card-body">
+                        <h2 class="text-xs-center">- Study Guide - </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><b>HZ Learn</b></h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Hier staan alle opdrachten/courses die ik al gedaan heb of nog moet doen.</p>
+                        <a href="https://learn.hz.nl/my/" target="_blank" class="btn btn-dark">Bijhorende pagina</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><b>Study Progress</b></h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">De pagina van de HZ met al mijn resultaten, zal grotendeels overeen komen met de Study Monitor.</p>
+                        <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank" class="btn btn-dark">Bijhorende pagina</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><b>Study Programme Github environment</b></h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Hier staan al mijn project opgeslagen die ik bij de HZ heb gemaakt.</p>
+                        <a href="https://github.com/" target="_blank" class="btn btn-dark">Bijhorende pagina</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><b>Examination Regulations</b></h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">De regels/eisen waar ik aan moet voeldoen om te slagen.</p>
+                        <a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen" target="_blank" class="btn btn-dark">Bijhorende pagina</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><b>Implementation Regulations HBO-ICT</b></h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">De Uitvoeringsregelingen van HBO-ICT.</p>
+                        <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf" target="_blank" class="btn btn-dark">Bijhorende pagina</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><b>Study Programme Teams Environment</b></h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">De omgeving om contact op te nemen met studenten en docenten.</p>
+                        <a href="https://teams.microsoft.com/_?culture=nl-be&country=BE&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school//?ctx=teamsGrid" target="_blank" class="btn btn-dark">Bijhorende pagina</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <br>
