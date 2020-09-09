@@ -22,7 +22,7 @@
                             <a class="nav-link " href="index.html">Home</a>
                             <a type="button" class="btn btn-dark dropdown-toggle navDropdown dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('index.html','HBO')">HBO</a>
+                                <a class="dropdown-item" onclick="scrollToIdDiffrentPage('index.html','HBO')">Waarom HBO</a>
                                 <a class="dropdown-item" onclick="scrollToIdDiffrentPage('index.html','StudyProgram')">Study Program</a>
                             </div>
                         </div>
@@ -244,6 +244,9 @@
                                     <div class="col-3">
                                         <a href="https://swagger.io/" class="btn btn-dark btn-block" target="_blank">Swagger</a>
                                     </div>
+                                    <div class="col-3">
+                                        <a href="https://git-scm.com/" class="btn btn-dark btn-block" target="_blank">Git</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -316,13 +319,13 @@
                                     voor het uitrekenen van hoeveel lichten een helideck of pad nodig heeft en dit visueel weergegeven.<br> Hierdoor krijgen de klanten een visueel overzicht van hoe hun helideck of pad eruit gaat zien door middel van een
                                     paar dimensies in te invoeren, ook weten ze gelijk hoeveel ze moeten bestellen bij Q-Aviation.</p>
                                 <a href="https://www.qaviation.nl/" class="btn btn-dark" target="_blank">Q-Aviation</a>
-                                <a href="#projecten" class="btn btn-dark" target="_blank">Meer over "helideck calculator"</a>
+                                <a onclick="scrollToIdDiffrentPage('profile.html','Projecten')" class="btn btn-dark">Meer over "helideck calculator"</a>
                             </div>
                             <div class="tab-pane fade" id="v-pills-Yisual" role="tabpanel" aria-labelledby="v-pills-Yisual-tab">
                                 <p>Yisual was mijn tweede stage, hier liep ik stage van augustus 2019 tot januari 2020 en duurde 20 weken.<br> Yisual specialiseert in het designen van brochures voor de huizen die makelaars verkopen.<br> Mijn opdracht was
                                     om een API te maken die bestellingen die klanten bij Yisual plaatsen door te sturen naar de gekozen drukker. </p>
                                 <a href="https://www.yisual.com/" class="btn btn-dark" target="_blank">Yisual</a>
-                                <a href="#projecten" class="btn btn-dark" target="_blank">Meer over "Press-Print"</a>
+                                <a onclick="scrollToIdDiffrentPage('profile.html','Projecten')" class="btn btn-dark">Meer over "Press-Print"</a>
                             </div>
                         </div>
                     </div>
@@ -348,6 +351,9 @@
                             <a class="profileNavColor nav-link" id="v-pills-PP-tab" data-toggle="pill" href="#v-pills-PP" role="tab" aria-controls="v-pills-PP" aria-selected="false">Press-Print</a>
                             <a class="profileNavColor nav-link" id="v-pills-VOS-tab" data-toggle="pill" href="#v-pills-VOS" role="tab" aria-controls="v-pills-VOS" aria-selected="false">VOS</a>
                             <a class="profileNavColor nav-link" id="v-pills-Pasimo-tab" data-toggle="pill" href="#v-pills-Pasimo" role="tab" aria-controls="v-pills-Pasimo" aria-selected="false">Pasimo</a>
+                            <a class="profileNavColor nav-link" id="v-pills-Pong-tab" data-toggle="pill" href="#v-pills-Pong" role="tab" aria-controls="v-pills-Pong" aria-selected="false">Pong</a>
+                            <a class="profileNavColor nav-link" id="v-pills-PizzaClicker-tab" data-toggle="pill" href="#v-pills-PizzaClicker" role="tab" aria-controls="v-pills-PizzaClicker" aria-selected="false">Pizza Clicker</a>
+                            <a class="profileNavColor nav-link" id="v-pills-TankSlapper-tab" data-toggle="pill" href="#v-pills-TankSlapper" role="tab" aria-controls="v-pills-TankSlapper" aria-selected="false">Tank Slapper</a>
                         </div>
                     </div>
                     <div class="col-9" id="projectsInfo">
@@ -374,6 +380,23 @@
                                 <p>Pasimo was mijn eidproject voor het MBO met alle adnere examenstudenten. Pasimo is een applicatie om de aanwezigheid van studenten en docenten bij te kunnen houden. Aan het begin van de dag inchecken met je Scalda pas,
                                     tijdens pauzes uitcheken enz.<br> Het is het grootste project van de opleiding en ik heb gewerkt aan het kunnen aanmaken van schooljaren.<br> Het was meer werk dan ik dacht want schooljaren hebben met een heleboel te
                                     maken. Voor Pasimo hebben we gewerkt met Java, Struts2, HTML, CSS en nog een paar talen.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-Pong" role="tabpanel" aria-labelledby="v-pills-Pong-tab">
+                                <p>Voor Pong heb ik Java gebruikt met wat JavaFx voor de view. Mijn doel was om een simpele multiplayer game te maken, Pong was hier perfect voor, omdat er maar max 2 spelers in een potje zitten. Momenteel moeten de spelers
+                                    nog wel op hetzelfde netwerk zitten en een van hun moet de server draaien. Het werkt nog niet perfect maar wel goed genoeg om het met vrienden te kunnen spelen en ik ben er tevreden mee.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-PizzaClicker" role="tabpanel" aria-labelledby="v-pills-PizzaClicker-tab">
+                                <p>Pizza Clicker was mijn eerste game, de fornt end is gemaakt met Angular die verbinding maakt met een NodeJs server die verbinding maakt met een mongoDB database voor het opslaan van player data. Mijn doel was om te experimenteren
+                                    met MongoDB en Angular. Hiervoor wou ik een Cookie Clicker clone maken maar dan met Pizza's omdat dit mijn favoriete eten is. Tijdens dit project heb ik ook wat geleerd over security omdat ik niet wou dat spelers zelf
+                                    hun aantal pizza's konden veranderen.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-TankSlapper" role="tabpanel" aria-labelledby="v-pills-TankSlapper-tab">
+                                <p>Tank slapper heb ik gemaakt na Pong met voornamenlijk JavaScript en een NodeJs server. Mijn doel was om een multiplayer game te maken met meer dan 2 spelers, dit is gelukt. Als iemand de server heeft draaien op hun laptop
+                                    kunnen anderen er verbinding mee maken via zijn ip, naam invoeren en spelen maar. het doel is om zoveel mogenlijk andere spelers te verslaan zonder zelf dood te gaan om een zo'n hoog mogenlijke score te krijgen. Je
+                                    gebruikt wasd om te bewegen en je schiet naar waar je muis is ten opzichte van de speler.
                                 </p>
                             </div>
                         </div>
