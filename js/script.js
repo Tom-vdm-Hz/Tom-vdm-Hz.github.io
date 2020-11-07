@@ -103,3 +103,25 @@ function getEc(tableChild) {
         }
     }
 }
+
+
+var names = ["bas", "tom", "edwin", "danielle"];
+
+function getSintName() {
+    let yourName = document.getElementById("playerNames").value;
+    var name = names[Math.floor(Math.random() * names.length)];
+    if (yourName === "selecteer je naam") {
+        alert("halllooooo, dit mag niet!!!")
+    } else {
+        if (yourName === names[0]) {
+            alert("er is iets fout gegaan, contact tom")
+        }
+        while (name === yourName) {
+            name = names[Math.floor(Math.random() * names.length)];
+        }
+        document.getElementById('yourPerson').innerHTML = name
+        names.splice(names.indexOf(name), 1)
+
+    }
+    console.log(names)
+}
